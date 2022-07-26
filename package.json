@@ -1,0 +1,39 @@
+{
+  "name": "BlogServer",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "node bin/www",
+    "dev": "cross-env NODE_ENV=dev ./node_modules/.bin/nodemon bin/www",
+    "prd": "cross-env NODE_ENV=prd pm2 start pm2.config.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "crypto-js": "^4.1.1",
+    "debug": "^4.1.1",
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-compress": "^5.1.0",
+    "koa-convert": "^1.2.0",
+    "koa-json": "^2.0.2",
+    "koa-jwt": "^4.0.3",
+    "koa-logger": "^3.2.0",
+    "koa-onerror": "^4.1.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.2.0",
+    "maxmind": "^4.3.6",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.3",
+    "node-rsa": "^1.1.1",
+    "pm2": "^5.2.0",
+    "request-ip": "^2.2.0",
+    "sequelize": "^6.20.1",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}
